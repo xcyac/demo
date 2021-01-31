@@ -24,6 +24,7 @@ public class DemoController {
 
     @GetMapping(value = "/test1")
     public String test1(){
+        System.out.println("test111111111");
         return "test1";
     }
 }
