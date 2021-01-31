@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping
-public class controller {
+public class DemoController {
 
 
     @GetMapping(value = "/test")
@@ -20,5 +20,10 @@ public class controller {
         }else {
             return param;
         }
+    }
+
+    @GetMapping(value = "/test1")
+    public String test1(){
+        return "test1";
     }
 }
